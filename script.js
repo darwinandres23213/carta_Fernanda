@@ -24,8 +24,25 @@ function addHearts() {
     }
 }
 
-// Efecto de partículas en el fondo al cargar
-window.addEventListener('load', () => {
+// Función para iniciar la experiencia
+function startExperience() {
+    // Ocultar overlay
+    const overlay = document.getElementById('start-overlay');
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 500);
+    
+    // Iniciar música
+    const audio = document.getElementById('background-music');
+    audio.play();
+    
+    // Iniciar efectos visuales
+    startVisualEffects();
+}
+
+// Función para efectos visuales
+function startVisualEffects() {
     const container = document.getElementById('hearts-container');
     const hearts = ['✨', '💫', '⭐'];
     
@@ -46,7 +63,7 @@ window.addEventListener('load', () => {
             }, 4000);
         }
     }, 500);
-});
+}
 
 // Efecto parallax suave al hacer scroll
 window.addEventListener('scroll', () => {
