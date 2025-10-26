@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Romántica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <img src="img/kumoni.png" alt="Kuromi" class="romantic-image">
+                </div>
+                <div class="text-container">
+                    <h2 class="title">Mi Poema para Ti</h2>
+                    <div class="heart-divider">
+                        <span class="heart">♡</span>
+                        <span class="heart">♡</span>
+                        <span class="heart">♡</span>
+                    </div>
+                    <p class="poem" id="poem-text">Este poema habla de un amor bonito, real y compañero. De querer a alguien no solo por lo que es, sino por cómo camina contigo, por cómo te inspira, te impulsa y te hace sentir que juntos son mucho más que dos.<br><br>Es un amor que no se queda en lo romántico, sino que también admira, respeta y comparte sueños.</p>
+                    <div class="heart-divider">
+                        <span class="heart">♡</span>
+                        <span class="heart">♡</span>
+                        <span class="heart">♡</span>
+                    </div>
+                    <button class="heart-button" onclick="addHearts()">
+                        ❤️
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="hearts-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
